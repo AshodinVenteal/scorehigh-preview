@@ -30,13 +30,13 @@
 <div class="utility-bar"><a href="index.html">Tournaments</a><span>CARD SCORING / PINBALL</span></div>
 
 <section class="tournament-heading"><div><p class="eyebrow">TOURNAMENT 25025</p><h1><span class="heading-icon" aria-hidden="true">🏆</span> 25-player demo</h1></div></section>
-<nav class="tabs" aria-label="Tournament"><a aria-current="page" href="index.html">Standings</a><a  href="#format">Machines</a><a  href="#format">How it works</a><a class="matchplay-tab" data-demo-external href="https://app.matchplay.events/" target="_blank" rel="noopener noreferrer">Match Play <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></nav>
+<nav class="tabs" aria-label="Tournament"><a aria-current="page" href="index.html">Standings</a><a  href="machines.html">Machines</a><a  href="how-it-works.html">How it works</a><a class="matchplay-tab" data-demo-external href="https://app.matchplay.events/" target="_blank" rel="noopener noreferrer">Match Play <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></nav>
 
 <main id="main" tabindex="-1">
 <div class="monitor-interstitial" aria-hidden="true" hidden><div class="interstitial-brand"><span class="interstitial-title">SCORE HIGH</span><span class="interstitial-subtitle">4 TRANS LIVES</span><span class="interstitial-rule"></span><span class="interstitial-range" data-monitor-transition-label>Standings</span></div></div>
 <div class="monitor-tools" data-monitor-tools hidden><a class="framed-button" href="index.html">Exit display</a><button class="framed-button" type="button" data-fullscreen>Fullscreen</button><button class="framed-button" type="button" data-monitor-prev aria-label="Previous standings page">←</button><span data-monitor-page role="status"></span><button class="framed-button" type="button" data-monitor-next aria-label="Next standings page">→</button><button class="framed-button" type="button" data-monitor-rotate aria-pressed="true">Rotate: on</button></div>
 <div class="workspace">
-<nav class="portal-directory panel" aria-label="Pinball directory"><div class="panel-bar"><h2>Navigation</h2></div><a href="index.html">All tournaments</a><a aria-current="page" href="index.html">Standings</a><a href="#format">Machines &amp; multipliers</a><a href="#format">Scoring rules</a></nav>
+<nav class="portal-directory panel" aria-label="Pinball directory"><div class="panel-bar"><h2>Navigation</h2></div><a href="index.html">All tournaments</a><a aria-current="page" href="index.html">Standings</a><a href="machines.html">Machines &amp; multipliers</a><a href="how-it-works.html">Scoring rules</a></nav>
 <section class="standings-section" aria-labelledby="standings-title">
 <div class="section-heading"><div><p class="eyebrow">BEST-CARD RANKING</p><h2 id="standings-title">Standings</h2></div><div class="refresh-controls" data-refresh-controls hidden><a class="text-button event-display-link" href="index.html?display=monitor">Event display ↗</a><button class="text-button" type="button" data-refresh>↻ Refresh</button><button class="text-button" type="button" data-auto aria-pressed="true">Auto: on</button></div></div>
 <p class="section-description">Highest valid card per player.</p>
@@ -753,7 +753,7 @@
 </div>
 <p class="update-status" data-demo-status role="status" data-updated-at="2026-11-03T12:00:00Z" data-static-snapshot="true">Simulated results · 25 players · no live updates</p>
 </section>
-<aside class="sidebar" aria-label="Tournament reference"><section class="panel quick-guide"><div class="panel-bar"><h2>Scoring</h2><span aria-hidden="true">i</span></div><dl><div><dt>Standings</dt><dd>Best valid card</dd></div><div><dt>Game points</dt><dd>Score × multiplier</dd></div><div><dt>Card points</dt><dd>Sum of game points</dd></div><div><dt>Era limit</dt><dd>2 games per era</dd></div></dl><a class="panel-link" href="#format">Machine multipliers <span aria-hidden="true">→</span></a></section><section class="era-key"><h3>Machine eras</h3><p><span class="era era-old">OLD</span> Alphanumeric</p><p><span class="era era-mid">MID</span> Dot matrix / DMD</p><p><span class="era era-new">NEW</span> Full LCD</p></section></aside>
+<aside class="sidebar" aria-label="Tournament reference"><section class="panel quick-guide"><div class="panel-bar"><h2>Scoring</h2><span aria-hidden="true">i</span></div><dl><div><dt>Standings</dt><dd>Best valid card</dd></div><div><dt>Game points</dt><dd>Score × multiplier</dd></div><div><dt>Card points</dt><dd>Sum of game points</dd></div><div><dt>Era limit</dt><dd>2 games per era</dd></div></dl><a class="panel-link" href="machines.html">Machine multipliers <span aria-hidden="true">→</span></a></section><section class="era-key"><h3>Machine eras</h3><p><span class="era era-old">OLD</span> Alphanumeric</p><p><span class="era era-mid">MID</span> Dot matrix / DMD</p><p><span class="era era-new">NEW</span> Full LCD</p></section></aside>
 </div>
 <details class="panel format-panel" id="format"><summary><strong>Scoring rules</strong><span class="details-plus" aria-hidden="true">+</span></summary><div class="rules-content"><p>Multiply each game score by the machine's multiplier, then add the results for the card total. Your best valid card counts toward the standings.</p><ul><li>A card can have up to 2 games per era.</li><li>Scores from separate cards aren't combined.</li></ul><p>Open a card to see its game scores and multipliers.</p><div class="era-legend"><span class="era era-old">Old · Alphanumeric</span><span class="era era-mid">Mid · DMD</span><span class="era era-new">New · LCD</span></div><p class="muted">Cards over the era limit don't count. Ask a tournament director if a card looks wrong.</p></div></details>
 </main>
@@ -1130,7 +1130,8 @@
   updateStatus();
 })();
 </script><script>
-document.querySelector('[data-refresh-controls]').hidden = false;
+const demoRefreshControls = document.querySelector('[data-refresh-controls]');
+if (demoRefreshControls) demoRefreshControls.hidden = false;
 document.querySelectorAll('[data-refresh], [data-auto]').forEach(el => el.hidden = true);
 document.querySelectorAll('[data-demo-player]').forEach(link => link.addEventListener('click', event => {
   event.preventDefault();
