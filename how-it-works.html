@@ -88,7 +88,7 @@
     one('[data-matchplay-stylesheet]').disabled = selected !== 'matchplay';
     styleSelect.value = selected;
   };
-  const monitor = new URLSearchParams(location.search).get('display') === 'monitor';
+  const monitor = document.documentElement.dataset.monitor === 'true' || new URLSearchParams(location.search).get('display') === 'monitor';
   if (monitor) document.documentElement.dataset.monitor = 'true';
   setStyle(monitor ? 'matchplay' : readSetting('scorehigh-demo-style'));
   styleSelect.addEventListener('change', () => {

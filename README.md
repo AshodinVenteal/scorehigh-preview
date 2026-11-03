@@ -7,6 +7,8 @@ Monitor page changes fade out to a Score High logo interstitial, then fade
 the next standings page in. Reduced-motion preferences skip the animation.
 
 This repository is separate from the production ScoreHigh site.
+The dedicated monitor URL is monitor.html. The Monitor button on index.html
+opens it directly; Exit display returns to index.html.
 
 Original scoring project: Elia Lake / arborelia, copyright 2026.
 Original terms are retained in LICENSE.txt. Embedded font license notices
