@@ -15,7 +15,9 @@ players, eight at a time, without the top-three cards. Games are visible for
 each player. The whole board fades together between pages, without logo
 interstitials. Image commas match the display font, with a small gap between
 digit groups for readability. Machine blocks share colors by era and show
-a small era label. The top three cards have extra vertical space.
+a small corner label (Old, Mid, or New). The top three cards have extra
+vertical space. Each simulated player has a distinct six-game lineup,
+with two games from each era in varied order.
 The existing monitor.html preview is retained for comparison.
 
 Original scoring project: Elia Lake / arborelia, copyright 2026.
