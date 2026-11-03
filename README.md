@@ -18,7 +18,14 @@ digit groups for readability. Machine blocks share colors by era and show
 a small corner label (Old, Mid, or New). The top three cards have extra
 vertical space. Each simulated player has a distinct six-game lineup,
 with two games from each era in varied order.
-The same updated display is also available at monitor-details.html.
+The isolated monitor testbed starts at monitor-preview.html, with larger
+desktop game labels and dedicated Machines / How it works pages. Its Monitor
+button opens monitor-preview-monitor.html; monitor-details.html is an alias
+for that event display. The display adapts to 1600x900 and nearby resolutions,
+keeping ranks 1-8 together while adjusting later-page capacity to the viewport.
+Testbed display preferences are saved separately from the regular preview.
+The regular index.html and monitor.html remain unchanged until the testbed
+changes are ready to merge.
 
 Original scoring project: Elia Lake / arborelia, copyright 2026.
 Original terms are retained in LICENSE.txt. Embedded font license notices
