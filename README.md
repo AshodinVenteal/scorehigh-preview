@@ -9,9 +9,11 @@ the next standings page in. Reduced-motion preferences skip the animation.
 This repository is separate from the production ScoreHigh site.
 The dedicated monitor URL is monitor.html. The Monitor button on index.html
 opens it directly; Exit display returns to index.html.
-An independent alternative is monitor-details.html: pinned top-three card
-breakdowns, games shown for each player, instant page changes without logo
-interstitials, and zero-advance image commas matching the display font.
+An independent alternative is monitor-details.html: page one shows the top
+three card breakdowns and ranks 4–8 together. Later pages show the remaining
+players, eight at a time, without the top-three cards. Games are visible for
+each player. The whole board fades together between pages, without logo
+interstitials. Zero-advance image commas match the display font.
 The existing monitor.html preview is retained for comparison.
 
 Original scoring project: Elia Lake / arborelia, copyright 2026.
