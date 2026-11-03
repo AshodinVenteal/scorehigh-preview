@@ -1,5 +1,7 @@
 # ScoreHigh preview
 
+Built from [ScoreHigh 1.0.0](https://github.com/AshodinVenteal/scorehigh/releases/tag/v1.0.0).
+
 Standalone preview with 25 simulated players. No real tournament results or
 live Match Play API calls. Event display is designed for 1920×1080 monitors
 and rotates through pages for larger fields.
