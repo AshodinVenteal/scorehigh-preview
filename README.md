@@ -14,6 +14,9 @@ are included alongside the page (DSEG, Doto, Share Tech Mono, Sixtyfour, VT323).
 7 Segment Display by Bernard Teo, based on Mylicia's “segment”, is used for
 alphanumeric score digits. All ten digits have the same advance width.
 The original archive, readme, and CC BY-SA 3.0 notice are included.
+The seven-segment comma is the font's exact glyph outline, extracted as a
+small SVG image to handle its zero-width text advance. This derived image
+retains the same CC BY-SA 3.0 license and author attribution.
 DS-Digital by Dusit Supasawat was used in the prior preview.
 The original shareware notice and unmodified download archive are retained
 as DS-Digital-LICENSE.txt and ds_digital.zip.
