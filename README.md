@@ -11,7 +11,7 @@ The dedicated monitor URL is monitor.html. The Monitor button on index.html
 opens it directly; Exit display returns to index.html.
 Page one shows the top
 three card breakdowns and ranks 4–8 together. Later pages show the remaining
-players, eight at a time, without the top-three cards. Games are visible for
+players, up to eight at a time, without the top-three cards. Games are visible for
 each player. The whole board fades together between pages, without logo
 interstitials. Image commas match the display font, with a small gap between
 digit groups for readability. Machine blocks share colors by era and show
@@ -24,8 +24,9 @@ button opens monitor-preview-monitor.html; monitor-details.html is an alias
 for that event display. The display adapts to 1600x900 and nearby resolutions,
 keeping ranks 1-8 together while adjusting later-page capacity to the viewport.
 Testbed display preferences are saved separately from the regular preview.
-The regular index.html also shows the varied card data and faded unused slots.
-Other testbed layout changes remain separate until they are ready to merge.
+The regular preview pages now include the latest testbed layout, game slots,
+column spacing, bottom-right Breakdown controls, and prominent podium badges.
+Production hosting remains separate from this preview repository.
 
 Original scoring project: Elia Lake / arborelia, copyright 2026.
 Original terms are retained in LICENSE.txt. Embedded font license notices
