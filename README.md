@@ -3,13 +3,13 @@
 Standalone preview with 25 simulated players. No real tournament results or
 live Match Play API calls. Event display is designed for 1920×1080 monitors
 and rotates through pages for larger fields.
-Monitor page changes fade out to a Score High logo interstitial, then fade
-the next standings page in. Reduced-motion preferences skip the animation.
+Monitor page changes fade the whole standings board together without logo
+interstitials. Reduced-motion preferences skip the animation.
 
 This repository is separate from the production ScoreHigh site.
 The dedicated monitor URL is monitor.html. The Monitor button on index.html
 opens it directly; Exit display returns to index.html.
-An independent alternative is monitor-details.html: page one shows the top
+Page one shows the top
 three card breakdowns and ranks 4–8 together. Later pages show the remaining
 players, eight at a time, without the top-three cards. Games are visible for
 each player. The whole board fades together between pages, without logo
@@ -18,7 +18,7 @@ digit groups for readability. Machine blocks share colors by era and show
 a small corner label (Old, Mid, or New). The top three cards have extra
 vertical space. Each simulated player has a distinct six-game lineup,
 with two games from each era in varied order.
-The existing monitor.html preview is retained for comparison.
+The same updated display is also available at monitor-details.html.
 
 Original scoring project: Elia Lake / arborelia, copyright 2026.
 Original terms are retained in LICENSE.txt. Embedded font license notices
