@@ -13,7 +13,9 @@ An independent alternative is monitor-details.html: page one shows the top
 three card breakdowns and ranks 4–8 together. Later pages show the remaining
 players, eight at a time, without the top-three cards. Games are visible for
 each player. The whole board fades together between pages, without logo
-interstitials. Zero-advance image commas match the display font.
+interstitials. Image commas match the display font, with a small gap between
+digit groups for readability. Machine blocks share colors by era and show
+a small era label. The top three cards have extra vertical space.
 The existing monitor.html preview is retained for comparison.
 
 Original scoring project: Elia Lake / arborelia, copyright 2026.
