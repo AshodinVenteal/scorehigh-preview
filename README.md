@@ -24,8 +24,8 @@ button opens monitor-preview-monitor.html; monitor-details.html is an alias
 for that event display. The display adapts to 1600x900 and nearby resolutions,
 keeping ranks 1-8 together while adjusting later-page capacity to the viewport.
 Testbed display preferences are saved separately from the regular preview.
-The regular index.html and monitor.html remain unchanged until the testbed
-changes are ready to merge.
+The regular index.html also shows the varied card data and faded unused slots.
+Other testbed layout changes remain separate until they are ready to merge.
 
 Original scoring project: Elia Lake / arborelia, copyright 2026.
 Original terms are retained in LICENSE.txt. Embedded font license notices
