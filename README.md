@@ -16,8 +16,8 @@ each player. The whole board fades together between pages, without logo
 interstitials. Image commas match the display font, with a small gap between
 digit groups for readability. Machine blocks share colors by era and show
 a small corner label (Old, Mid, or New). The top three cards have extra
-vertical space. Each simulated player has a distinct six-game lineup,
-with two games from each era in varied order.
+vertical space. Simulated players have one to six recorded games, with
+at most two games from each era. Unused game slots appear as faint rectangles.
 The isolated monitor testbed starts at monitor-preview.html, with larger
 desktop game labels and dedicated Machines / How it works pages. Its Monitor
 button opens monitor-preview-monitor.html; monitor-details.html is an alias
